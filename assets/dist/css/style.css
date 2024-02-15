@@ -1,0 +1,350 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: kanit;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.logo{
+    font-size: 20px;
+    text-align: left;
+    font-family: pacifico;
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+.form-label{
+    display: flex;
+    color: red;
+}
+
+input, textarea{
+    width: 100%;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-weight: 400;
+    margin: 10px 0  ;
+}
+
+textarea{
+    min-height: 200px;
+}
+
+input:focus{
+    border: 2px black solid;
+}
+
+section{
+    padding: 60px 0;
+}
+
+.section__title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.section__description{
+    padding: 0 20%;
+    text-align: center;
+}
+
+/*----------------------- Navbar -------------------------*/
+nav div{
+    padding: 10px 30px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+nav .nav__left h1{
+    font-size: 20px;
+    text-align: left;
+    font-family: pacifico;
+    font-weight: bold;
+}
+
+nav .nav__center{
+    justify-content: center;
+}
+
+nav .nav__center ul {
+    display: flex;
+}
+
+nav .nav__center ul li{
+    margin: 0 20px;
+}
+
+nav .nav__rigth{
+    justify-content: right;
+}
+
+.btn__cta{
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+}
+
+.btn__cta-border{
+    border: 1px white solid;
+    color: white;
+    padding: 8px 15px;
+}
+
+@media screen and (max-width : 768px) {
+    nav .nav__center, nav .nav__rigth{
+        display: none;
+    }
+
+    nav .hamberger__content{
+        text-align: right;
+        width: 40%;
+    }
+
+    .hamberger{
+        margin: 0 0 0 20px;
+        font-size: 20px;
+    }
+
+    .hidden{
+        display: block;
+    }
+}
+
+/*----------------------- main -------------------------*/
+
+main{
+    padding: 0 60px;
+}
+
+/*----------------------- accueil -------------------------*/
+
+.accueil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accueil div{
+    width: 50%;
+}
+
+.accueil .main__text h1{
+    font-size: 80px;
+    font-family: kanit;
+    line-height: 80px;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.accueil .main__text p{
+    margin-bottom: 30px;
+    width: 85%;
+}
+
+.accueil .illustation img{
+    width: 100%;
+}
+
+/*----------------------- produits -------------------------*/
+.product__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.product__container .product__card {
+    padding: 50px 30px;
+    margin: 20px 30px;
+
+    box-shadow: 0px -1px 33px 1px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 0px -1px 33px 1px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px -1px 33px 1px rgba(0,0,0,0.16);
+}
+
+.product__container .product__card .card__image img{
+    width: 100%;
+    min-width: 250px;
+    max-height: 200px;
+}
+
+.product__container .product__card .product__infoproduct__info{
+    width: 100%;
+}
+
+.product__container .product__card .product__info{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.product__container .product__card .product__info .product__title{ 
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.product__container .product__card .product__info .product__price{ 
+    font-size: 30px;
+    color: pink;
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.product__container .product__card .product__info a{ 
+    padding: 8px 15px;
+}
+
+/*----------------------- propos -------------------------*/
+
+.propos{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+} 
+
+.propos .image{
+    width: 100%;
+} 
+
+.propos .section__title{
+    text-align: left;
+    line-height: 45px;
+} 
+
+.propos .section__description{
+    text-align: justify;
+    padding: 0;  
+}
+
+
+/*----------------------- offres -------------------------*/
+.offre .offre__container{
+    display: flex;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px 50px 50px 50px;
+    position: relative;
+}
+
+.offre .offre__container .offre__text{
+    width: 60%;
+}
+
+.offre .offre__container .offre_image img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 500px;
+}
+
+.offre .offre__container .offre__text .section__title, .offre .offre__container .offre__text .section__description{
+    text-align: left;
+    padding: 0;
+}
+
+.offre .offre__container .offre__text .section__description{
+    margin-bottom: 30px;
+}
+
+/*----------------------- contact -------------------------*/
+
+.contact .content{
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+}
+
+.contact div .form__content{
+    width: 50%;
+}
+
+.contact div .form__content div, .contact div .form__content form{
+    width: 100%;
+}
+
+.contact div .logo__content{
+    width: 50%;
+    padding: 0 0 0 15%;
+}
+
+.contact div .logo__content .logo{
+    font-size: 2.5rem;
+}
+
+.contact div .form__content button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+}
+
+/*----------------------- footer -------------------------*/
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer .signature{
+    text-align: center;
+    font-size: 2px;
+    padding: 10px;
+}
+footer .footer__content .footer__section{ 
+    width: 33.33%;
+    padding: 50px;
+}
+
+footer .footer__content .section__1 .logo{
+    font-size: 30px;
+}
+footer .footer__content .section__2{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer__content .section__2 .menu ul li a,
+footer .footer__content .section__2 .help ul li a{
+    color: white;
+}
+
+footer .section__title{
+    font-size: 20px;
+}
+
+footer .footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    border-bottom: 1px white solid;
+}
+
+footer .footer__content .section__3 ul{
+    display: flex;
+    margin: 20px 0;
+}
+
+footer .footer__content .section__3 ul li{
+    margin: 0 40px 20px 0;
+}
