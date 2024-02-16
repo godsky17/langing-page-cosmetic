@@ -28,6 +28,26 @@ a{
 .hidden{
     display: none;
 }
+
+.hidden__menu{
+    display: none;
+}
+
+.menu__active{
+    position: absolute;
+    background-color: #fff;
+    padding: 20px 0;
+    width: 50%;
+    right: 0;
+}
+
+.menu__active ul li{
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+
 .form-label{
     display: flex;
     color: red;
@@ -109,25 +129,6 @@ nav .nav__rigth{
     padding: 8px 15px;
 }
 
-@media screen and (max-width : 768px) {
-    nav .nav__center, nav .nav__rigth{
-        display: none;
-    }
-
-    nav .hamberger__content{
-        text-align: right;
-        width: 40%;
-    }
-
-    .hamberger{
-        margin: 0 0 0 20px;
-        font-size: 20px;
-    }
-
-    .hidden{
-        display: block;
-    }
-}
 
 /*----------------------- main -------------------------*/
 
@@ -174,8 +175,8 @@ main{
 }
 
 .product__container .product__card {
-    padding: 50px 30px;
-    margin: 20px 30px;
+    padding: 50px 2%;
+    margin: 50px 30px;
 
     box-shadow: 0px -1px 33px 1px rgba(0,0,0,0.16);
     -webkit-box-shadow: 0px -1px 33px 1px rgba(0,0,0,0.16);
@@ -224,6 +225,12 @@ main{
 
 .propos .image{
     width: 100%;
+    text-align: right;
+    padding-right: 20px;
+} 
+
+.propos .image img{
+    max-height: 20rem;
 } 
 
 .propos .section__title{
@@ -272,7 +279,8 @@ main{
 .contact .content{
     display: flex;
     align-items: center;
-    padding: 0 120px;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .contact div .form__content{
@@ -281,15 +289,6 @@ main{
 
 .contact div .form__content div, .contact div .form__content form{
     width: 100%;
-}
-
-.contact div .logo__content{
-    width: 50%;
-    padding: 0 0 0 15%;
-}
-
-.contact div .logo__content .logo{
-    font-size: 2.5rem;
 }
 
 .contact div .form__content button{
@@ -311,6 +310,7 @@ footer .signature{
     font-size: 2px;
     padding: 10px;
 }
+
 footer .footer__content .footer__section{ 
     width: 33.33%;
     padding: 50px;
@@ -348,3 +348,4 @@ footer .footer__content .section__3 ul{
 footer .footer__content .section__3 ul li{
     margin: 0 40px 20px 0;
 }
+
