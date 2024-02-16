@@ -1,154 +1,159 @@
 /*---------------- Tablette ---------------------------*/
 @media screen and (max-width : 768px) {
-    *{
+    * {
         font-size: 15px;
     }
 
-    .section__title{
+    .section__title {
         font-size: 30px;
     }
-    
-    .section__description{
+
+    .section__description {
         padding: 0 10%;
     }
 
     /*-----------navbar---------*/
-    nav .nav__center, nav .nav__rigth{
+    nav .nav__center,
+    nav .nav__rigth {
         display: none;
     }
 
-    nav .hamberger__content{
+    nav .hamberger__content {
         text-align: right;
         width: 40%;
     }
 
-    .hamberger{
+    .hamberger {
         margin: 0 0 0 20px;
         font-size: 20px;
     }
 
-    .hidden{
+    .hidden {
         display: block;
     }
 
-     /*----------- accueil ---------*/
-     .accueil .main__text h1{
+    /*----------- accueil ---------*/
+    .accueil .main__text h1 {
         font-size: 40px;
         line-height: 40px;
     }
 
     /*----------- produits ---------*/
 
-    .product__container{
+    .product__container {
         display: block;
         padding: 0 15%;
     }
 
-    .propos .image img{
+    .propos .image img {
         max-height: 30rem;
-    } 
+    }
 
-    .offre .offre__container{
+    .offre .offre__container {
         padding: 10px 20px 40px 20px;
     }
 
-    .offre .offre__container .offre__text{
+    .offre .offre__container .offre__text {
         z-index: 1000;
         width: 50%;
     }
 
-    .offre .offre__container .offre_image img{
+    .offre .offre__container .offre_image img {
         z-index: 0;
         margin-right: -15%;
     }
 
-    .contact div .form__content{
+    .contact div .form__content {
         width: 100%;
     }
 
     .product__container .product__card {
         padding: 0;
     }
-    
+
 
 }
 
 @media screen and (max-width : 425px) {
-    main{
+    main {
         padding: 0 8%;
     }
-    nav div{
+
+    nav div {
         padding: 2% 5%;
     }
-    .menu__active{
+
+    .menu__active {
         width: 80%;
     }
 
-     /*----------- accueil ---------*/
-     .accueil{
+    /*----------- accueil ---------*/
+    .accueil {
         display: block;
         text-align: center;
     }
-     .accueil div{
+
+    .accueil div {
         width: 100%;
     }
-    
+
 
     /*----------- produits ---------*/
 
-    .product__container .product__card .card__image img{
+    .product__container .product__card .card__image img {
         width: 100%;
         min-width: 50px;
         max-height: 200px;
     }
 
-    .product__container{
+    .product__container {
         padding: 0;
     }
 
-    .propos .image{
+    .propos .image {
         display: none;
-    } 
+    }
 
-    .offre .offre__container .offre__text{
+    .offre .offre__container .offre__text {
         z-index: 1000;
     }
 
-    .offre .offre__container .offre_image{
+    .offre .offre__container .offre_image {
         display: hidden;
     }
 
 
-    .offre .offre__container .offre__text{
+    .offre .offre__container .offre__text {
         width: 100%;
     }
-    .offre .offre__container .offre_image img{
+
+    .offre .offre__container .offre_image img {
         display: none;
     }
 
-    footer .footer__content{
+    footer .footer__content {
         display: block;
     }
 
-    footer .footer__content .footer__section{ 
+    footer .footer__content .footer__section {
         width: 100%;
     }
 
-    footer .footer__content .section__2{
+    footer .footer__content .section__2 {
         display: flex;
         justify-content: space-between;
     }
 
-    footer .footer__content .section__3{
+    footer .footer__content .section__3 {
         text-align: center;
     }
 
-    footer .footer__content .section__3 ul{
+    footer .footer__content .section__3 ul {
         justify-content: space-between;
         margin: 30px 0 0 0;
     }
 
-    footer .footer__content .section__3 ul li{
+    footer .footer__content .section__3 ul li {
         margin: 0;
     }
 }

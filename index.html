@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucrèsse cosmetic</title>
+    <title>Cosmetics</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="assets/dist/css/style.css">
     <link rel="stylesheet" href="assets/dist/css/responsive.css">
+
 </head>
+
 <body>
     <nav>
         <div>
             <div class="nav__left">
-                <h1 class="logo">Lucrèsse cosmetic</h1>
+                <h1 class="logo">Cosmetics</h1>
             </div>
             <div class="nav__center">
                 <ul>
@@ -53,17 +58,20 @@
         <section class="accueil" id="accueil">
             <div class="main__text">
                 <h1>Votre beauté, notre passion !</h1>
-                <p>Explorez notre gamme de produits de soins, conçus pour vous offrir une expérience de beauté personnalisée et vous aider à rayonner avec confiance chaque jour.</p>
+                <p>Explorez notre gamme de produits de soins, conçus pour vous offrir une expérience de beauté
+                    personnalisée et vous aider à rayonner avec confiance chaque jour.</p>
                 <a href="" class="btn__cta">Passer votre commande</a>
             </div>
             <div class="illustation">
                 <img src="assets/images/bg.png" alt="background image" srcset="">
             </div>
         </section>
-        
+
         <section class="produits" id="produits">
             <p class="section__title">Produits</p>
-            <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus quaerat id amet eum et dolores! Deserunt, corporis, fuga inventore aspernatur consequatur labore sit velit pariatur explicabo vero suscipit est!</p>
+            <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus
+                quaerat id amet eum et dolores! Deserunt, corporis, fuga inventore aspernatur consequatur labore sit
+                velit pariatur explicabo vero suscipit est!</p>
             <div class="product__container">
                 <div class="product__card">
                     <div class="card__image">
@@ -104,8 +112,13 @@
             </div>
             <div class="main__text">
                 <h3 class="section__title">Parce que prendre soins de vous est la seule chose que nous préocupe</h3>
-                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel blanditiis recusandae autem nam maxime temporibus minima in totam cum quisquam nisi, beatae iure voluptatem? Architecto laborum ratione sequi ullam illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugiat hic, suscipit nemo veniam distinctio, quae odio tempore et recusandae quis officiis id fugit eos reprehenderit corrupti enim similique error!</p><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quaerat et modi esse enim dicta cum reiciendis in itaque sint unde, eaque pariatur eos, facilis, officia sunt quae minima fugiat.</p>
+                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel blanditiis
+                    recusandae autem nam maxime temporibus minima in totam cum quisquam nisi, beatae iure voluptatem?
+                    Architecto laborum ratione sequi ullam illum. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Possimus fugiat hic, suscipit nemo veniam distinctio, quae odio tempore et recusandae quis
+                    officiis id fugit eos reprehenderit corrupti enim similique error!</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quaerat et modi esse enim dicta cum
+                    reiciendis in itaque sint unde, eaque pariatur eos, facilis, officia sunt quae minima fugiat.</p>
             </div>
         </section>
 
@@ -113,7 +126,9 @@
             <div class="offre__container">
                 <div class="offre__text">
                     <p class="section__title">Profiter dès aujourd'hui de nos offres</p>
-                    <p class="section__description">spéciaux en commandant vos produits maintenant. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex doloribus iste unde ducimus quibusdam itaque quis assumenda voluptas. Voluptates similique doloribus facilis ?</p>
+                    <p class="section__description">spéciaux en commandant vos produits maintenant. Lorem ipsum dolor,
+                        sit amet consectetur adipisicing elit. Ex doloribus iste unde ducimus quibusdam itaque quis
+                        assumenda voluptas. Voluptates similique doloribus facilis ?</p>
                     <a href="" class="btn__cta-border">Commmander</a>
                 </div>
                 <div class="offre_image">
@@ -126,15 +141,18 @@
             <h3 class="section__title">Vous avez besois de plus d'information ?</h3>
             <div class="content">
                 <div class="form__content">
-                    <form action="">
+                    <div class="error hidden" id="error">
+
+                    </div>
+                    <form action="mailto:christiangauthe2@gmail.com" method="post">
                         <div class="">
-                            <input type="email" name="email" id="" class="email" placeholder="Email">
+                            <input type="email" name="email" id="email" class="email" placeholder="Email">
                         </div>
                         <div class="">
                             <label for="message"></label>
-                            <textarea name="message" id="" placeholder="Message..."></textarea>
+                            <textarea name="message" id="message" placeholder="Message..."></textarea>
                         </div>
-                        <button type="submit">Envoyer</button>
+                        <button id="btnSubmit">Envoyer</button>
                     </form>
                 </div>
             </div>
@@ -146,8 +164,10 @@
     <footer>
         <div class="footer__content">
             <div class=" footer__section section__1">
-                <h1 class="logo">Lucrèsse cosmétic</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut enim pariatur dicta vero voluptates nulla sed sint ipsum incidunt doloremque saepe perferendis, quaerat accusamus fuga voluptas in natus molestiae.</p>
+                <h1 class="logo">Cosmetics</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut enim pariatur dicta vero
+                    voluptates nulla sed sint ipsum incidunt doloremque saepe perferendis, quaerat accusamus fuga
+                    voluptas in natus molestiae.</p>
             </div>
             <div class=" footer__section section__2">
                 <div class="menu">
@@ -178,11 +198,13 @@
             </div>
         </div>
         <div class="signature">
-            <p>Copyright ©  2024 <span class="bold">GENIOUS Tech </span>Tous droits réservés.</p>
+            <p>Copyright © 2024 <span class="bold">GENIOUS Tech </span>Tous droits réservés.</p>
         </div>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="assets/dist/js/script.js"></script>
-    
+
 </body>
+
 </html>
