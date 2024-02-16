@@ -39,6 +39,7 @@ a{
     padding: 20px 0;
     width: 50%;
     right: 0;
+    animation: myAnim 0.3s ease 0s 1 normal forwards;
 }
 
 .menu__active ul li{
@@ -157,6 +158,18 @@ main{
     font-weight: bold;
 }
 
+@media screen and (min-width : 800px){
+    
+    .accueil .main__text{
+        animation: slideInRigth 1.8s ease 0s 1 normal forwards;
+    }
+    
+    .accueil .illustation{
+        animation: slideInLeft 1.8s ease 0s 1 normal forwards;
+    }
+}
+
+
 .accueil .main__text p{
     margin-bottom: 30px;
     width: 85%;
@@ -167,6 +180,7 @@ main{
 }
 
 /*----------------------- produits -------------------------*/
+
 .product__container{
     display: flex;
     justify-content: space-around;
@@ -349,3 +363,39 @@ footer .footer__content .section__3 ul li{
     margin: 0 40px 20px 0;
 }
 
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInRigth {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
