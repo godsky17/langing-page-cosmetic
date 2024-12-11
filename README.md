@@ -60,14 +60,15 @@ Nous accueillons volontiers les contributions pour améliorer cette landing page
 3. Créez une branche pour votre fonctionnalité ou correction :
 bash
 Copier le code
-git checkout -b feature/ajout-nouveau-produit
+    ```bash
+    git checkout -b feature/ajout-nouveau-produit
 4. Apportez vos modifications.
 5. Committez et poussez vos changements :
-bash
-Copier le code
-git add .
-git commit -m "Ajout d'un nouveau produit dans la galerie"
-git push origin feature/ajout-nouveau-produit
+    Copier le code
+    ```bash
+    git add .
+    git commit -m "Ajout d'un nouveau produit dans la galerie"
+    git push origin feature/ajout-nouveau-produit
 6. Ouvrez une Pull Request.
 Assurez-vous que votre code respecte le format et les bonnes pratiques de l'application.
 
